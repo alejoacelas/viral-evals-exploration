@@ -1,0 +1,14 @@
+[project]
+name = "viral-evals-exploration"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.0",
+    "pandas>=2.3.3",
+    "pyarrow>=22.0.0",
+    "scipy>=1.16.3",
+    "seaborn>=0.13.2",
+]
