@@ -229,9 +229,9 @@ def main():
     print("Loading perplexity data...")
     df = pd.read_csv('combined_perplexity.csv')
 
-    # Filter to Tier 4 sequences (unique)
-    tier4 = df[df['eval_tier'] == 4]['sequence_id'].unique().tolist()
-    print(f"Found {len(tier4)} unique Tier 4 sequences")
+    # Get all unique sequences across all tiers
+    all_sequences = df['sequence_id'].unique().tolist()
+    print(f"Found {len(all_sequences)} unique sequences across all tiers")
 
     # Check if we already have cached metadata
     cache_path = Path('uniref_metadata.csv')
@@ -239,14 +239,14 @@ def main():
         print(f"Loading cached metadata from {cache_path}...")
         cached = pd.read_csv(cache_path)
         cached_ids = set(cached['sequence_id'].tolist())
-        missing_ids = [sid for sid in tier4 if sid not in cached_ids]
+        missing_ids = [sid for sid in all_sequences if sid not in cached_ids]
         print(f"  Cached: {len(cached_ids)}, Missing: {len(missing_ids)}")
 
         if not missing_ids:
             print("All metadata already cached!")
             return cached
     else:
-        missing_ids = tier4
+        missing_ids = all_sequences
         cached = None
 
     # Fetch missing metadata

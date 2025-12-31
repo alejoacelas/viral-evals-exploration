@@ -1,0 +1,7 @@
+tier,n_total,n_low,pct_low,n_high,pct_high,low_median_length,high_median_length,low_top_taxon,low_top_taxon_pct,high_top_taxon,high_top_taxon_pct
+1,1000,93,9.3,450,45.0,134.0,144.0,root,23.655913978494624,root,17.555555555555557
+2,1000,94,9.4,585,58.5,150.0,182.0,Human immunodeficiency virus type 1,28.72340425531915,root,3.4188034188034186
+3,1000,134,13.4,591,59.1,133.0,170.0,Human immunodeficiency virus type 1,44.776119402985074,Human immunodeficiency virus type 1,6.937394247038917
+4,1000,365,36.5,441,44.1,133.0,100.0,Human immunodeficiency virus type 1,92.6027397260274,Human immunodeficiency virus type 1,45.12471655328798
+5,1000,38,3.8,779,77.9,121.0,142.0,Severe acute respiratory syndrome corona,63.1578947368421,Coronaviridae,10.397946084724005
+6,156,32,20.512820512820515,88,56.41025641025641,120.5,138.0,Severe acute respiratory syndrome corona,78.125,Severe acute respiratory syndrome corona,20.454545454545453
